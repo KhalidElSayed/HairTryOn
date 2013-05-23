@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bg_header" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="TAAZ Sign in"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/tab_camera" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBottom="@+id/textView1" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_marginRight="14dp" -->
+        <!-- android:src="@drawable/camera" /> -->
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/fblogin"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="25dip"
+        android:textColor="#ccc"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:padding="5dip"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="OR" android:textSize="25sp" android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <!-- Login Form -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <!-- Email Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#372c24"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_login_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true" />
+                <!-- Password Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="#372c24"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_password_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:password="true"
+                    android:singleLine="true" />
+                <!-- Login button -->
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Login" />
+                <!-- Link to Registration Screen -->
+
+                <TextView
+                    android:id="@+id/link_to_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dip"
+                    android:layout_marginTop="40dip"
+                    android:gravity="center"
+                    android:text="New to TAAZ Register here"
+                    android:textColor="#0b84aa"
+                    android:textSize="20dip" />
+            </LinearLayout>
+            <!-- Login Form Ends -->
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

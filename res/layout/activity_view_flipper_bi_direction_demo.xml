@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bg_header" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="Try On"
+            android:textColor="#ffffff"
+            android:textSize="22sp" android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="430dip"
+        android:layout_below="@+id/r1"
+        android:layout_margin="10dip"
+        android:background="@layout/abjustround" >
+
+        <RelativeLayout
+              android:id="@+id/rel_flip"
+            android:layout_width="400dip"
+            android:layout_height="400dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="8dip"
+                         >
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="400dip"
+                android:layout_height="400dip"
+                android:layout_marginTop="10dip" 
+                android:layout_centerInParent="true"
+                >
+            </ViewFlipper>
+        </RelativeLayout>
+        
+         <RelativeLayout
+              android:id="@+id/rel_flip_up"
+            android:layout_width="400dip"
+            android:layout_height="400dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="8dip"
+                         >
+
+            <ViewFlipper
+                android:id="@+id/flipper_up"
+                android:layout_width="400dip"
+                android:layout_height="400dip"
+                android:layout_marginTop="10dip" 
+                android:layout_centerInParent="true"
+                >
+            </ViewFlipper>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/change" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/tab_camera" />
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/fav" />
+
+            <ImageView
+                android:id="@+id/img_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/save" />
+
+            <ImageView
+                android:id="@+id/img_abjust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/abjust" />
+        </TableRow>
+    </TableLayout>
+
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@+id/contentLayout"
+        android:handle="@+id/slideButton"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/slideButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawerbackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Share via Facebook"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Share via Email"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Save to Phone Gallery "
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_taaz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Save To TAAZ Photos"
+                android:textStyle="bold" >
+            </Button>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/seperatorimg" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dip"
+                android:padding="10dip"
+                android:text="    Cancel    "
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </SlidingDrawer>
+    <!-- abjust screen drawer ================================================== -->
+
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawerabjust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@+id/contentLayoutabjust"
+        android:handle="@+id/slideButtonabjust"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/slideButtonabjust"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentLayoutabjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawerbackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_marginBottom="50dip"
+                android:background="@layout/abjustround" >
+
+                <ImageView
+                    android:id="@+id/abjustimg_face"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/facesetup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="Abjust All Style"
+                    android:textColor="#889955"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_below="@+id/ll2"
+                android:layout_marginBottom="50dip"
+                android:background="@layout/abjustround" >
+
+                <ImageView
+                    android:id="@+id/abjustimg"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="Abjust This Style"
+                    android:textColor="#889955"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cancelabjust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dip"
+                android:padding="10dip"
+                android:text="    Cancel    "
+                android:textStyle="bold" >
+            </Button>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

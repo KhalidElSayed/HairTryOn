@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/border_color" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/border_background_black" >
+                
+		<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_hairextension"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/hair_extension" >
+
+                    <ImageView
+                        android:id="@+id/img_hairextension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/hair_extension_makeover_text"
+                        android:baselineAlignBottom="true" />
+                </RelativeLayout>
+                
+    <!-- =========================================================== First row =================================================== -->
+
+                <LinearLayout
+                    android:id="@+id/linfirstraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_hairextension"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_advice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/hair_advice" >
+
+                        <ImageView
+                            android:id="@+id/img_advice"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/hair_advice_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_installation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/installation_tips_box" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/installation_tips_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- ====================================== First row End ========================================== -->
+                <!-- ================================================ second row =================================================== -->
+
+                <LinearLayout
+                    android:id="@+id/linsecondraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linfirstraw"
+                    android:orientation="horizontal" >
+
+                    
+                    <RelativeLayout
+                        android:id="@+id/rel_video"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/videos_box" >
+
+                        <ImageView
+                            android:id="@+id/img_video"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/videos_box_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_photo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/photo_contest" >
+
+                        <ImageView
+                            android:id="@+id/img_photo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/photo_contest_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- ====================================== second row End ========================================== -->
+                <!-- ================================================ Third row =================================================== -->
+
+                <LinearLayout
+                    android:id="@+id/linthirdraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linsecondraw"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_before"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/before_and_after" >
+
+                        <ImageView
+                            android:id="@+id/img_before"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/before_and_after_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_offers"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/mobile_offer" >
+
+                        <ImageView
+                            android:id="@+id/img_offers"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/mobile_offer_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- ====================================== third row End ========================================== -->
+                <!-- ================================================ fourth row =================================================== -->
+
+                <LinearLayout
+                    android:id="@+id/linfourthraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linthirdraw"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_calculator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/pricing_calculator_img_box" >
+
+                        <ImageView
+                            android:id="@+id/img_calculator"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/pricing_calculator_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_tracker"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/client_tracker_img_box" >
+
+                        <ImageView
+                            android:id="@+id/img_tracker"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/client_tracker_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- ====================================== fourth row End ========================================== -->
+                <!-- ================================================ fifth row =================================================== -->
+
+                 <LinearLayout
+                    android:id="@+id/linfifthraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linfourthraw"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_shop"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="4dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/shop_big" >
+
+                        <ImageView
+                            android:id="@+id/img_shop"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/shop_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_socialize"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dip"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/socialize_img_box" >
+
+                        <ImageView
+                            android:id="@+id/img_socialize"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/socialize_text"
+                            android:baselineAlignBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- ====================================== fifth row End ========================================== -->
+                </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

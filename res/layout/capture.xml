@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#C12267" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="Change Pictures"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homefirst" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_takenew_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dp"
+                android:background="@layout/buttonrounded"
+                android:text="Take New photo"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_use_existing"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dp"
+                android:background="@layout/buttonrounded"
+                android:text="Pick from Phone Gallery"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_taaz"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dp"
+                android:background="@layout/buttonrounded"
+                android:text="Pick from TAAZ Photos"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#2E2E2E"
+            android:text="Saved Photos"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/left_arrow_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:src="@drawable/arrow_left_disabled" />
+
+            <Gallery
+                android:id="@+id/gallery1"
+                android:layout_width="0dip"
+                android:layout_height="150dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@+id/right_arrow_imageview"
+                android:layout_toRightOf="@+id/left_arrow_imageview"
+                android:spacing="20dip" />
+
+            <ImageView
+                android:id="@+id/right_arrow_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/arrow_right_enabled" />
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
